@@ -80,8 +80,6 @@ class TestApp:
             with client.session_transaction() as session:
                 assert(not session.get('user_id'))
             
-
-
     def test_checks_for_session(self):
         '''checks if a user is authenticated and returns the user as JSON at /check_session.'''
 
